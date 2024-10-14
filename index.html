@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertanyaan Seputar HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        section {
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        code {
+            background: #e7e7e7;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pertanyaan Seputar HTML</h1>
+
+    <section>
+        <h2>1. Pertanyaan Seputar Tag</h2>
+        <h3>a. Apa yang dimaksud dengan tag pada HTML?</h3>
+        <p>Tag adalah sebuah penanda awalan dan akhiran pada HTML. Tag dibuat dengan kurung sudut (<code>&lt;...&gt;</code>), lalu di dalamnya berisi nama tag dan terkadang bisa juga ditambahkan dengan atribut. Tag selalu ditulis berpasangan, ada tag pembuka dan tag penutupnya. Namun, ada juga beberapa tag yang tidak memiliki pasangan penutup. Tag penutup ditulis dengan menambahkan garis miring (<code>/</code>) di depan nama tag. Setiap tag memiliki fungsi masing-masing, ada yang digunakan untuk membuat judul, membuat link, membuat paragraf, heading dan lain-lain.</p>
+
+        <h3>b. Apa itu pembuka dan penutup tag? Apakah hal tersebut terdapat pada semua jenis tag?</h3>
+        <p>Pembuka dan penutup tag adalah cara untuk menandai awal dan akhir suatu elemen dalam HTML. Tag pembuka ditulis dengan format <code>&lt;tagname&gt;</code>, sedangkan tag penutup ditulis dengan format <code>&lt;/tagname&gt;</code>. Namun, ada juga beberapa tag yang tidak memiliki pasangan penutup. Tag ini dikenal sebagai tag penutup otomatis atau elemen kosong. Contoh tag yang tidak memerlukan tag penutup adalah <code>&lt;img&gt;</code> karena hanya menampilkan elemen tunggal di halaman web.</p>
+    </section>
+
+    <section>
+        <h2>2. Pertanyaan Seputar Elemen</h2>
+        <h3>a. Apa yang dimaksud dengan elemen?</h3>
+        <p>Elemen dalam HTML adalah bagian dari dokumen HTML yang berfungsi untuk membuat halaman web dan menentukan kontennya. Elemen dalam HTML merupakan kombinasi dari tag pembuka, konten, dan tag penutup yang bersama-sama membentuk bagian dari halaman web.</p>
+
+        <h3>b. Apa yang dimaksud dengan tagname, attribute dan content pada elemen?</h3>
+        <ul>
+            <li><strong>Tagname:</strong> Nama dari tag yang digunakan untuk mendefinisikan elemen. Contohnya, dalam tag <code>&lt;p&gt;</code>, "p" adalah tagname yang menunjukkan bahwa elemen tersebut adalah paragraf.</li>
+            <li><strong>Atribut:</strong> Informasi tambahan yang dapat ditambahkan ke tag untuk memberikan lebih banyak konteks atau mengubah perilaku elemen.</li>
+            <li><strong>Content:</strong> Isi atau teks yang berada di antara tag pembuka dan tag penutup.</li>
+        </ul>
+
+        <h3>c. Apakah elemen dapat ditumpuk? Apa yang terjadi bila demikian?</h3>
+        <p>Ya, elemen dapat ditumpuk satu di dalam yang lain. Ketika elemen ditumpuk, struktur hierarkis ini dapat membantu mengorganisir konten dan memberikan makna yang lebih baik pada halaman web. Browser akan menampilkan elemen-elemen tersebut sesuai dengan struktur yang telah ditentukan. Namun, penting untuk memastikan bahwa nesting dilakukan dengan benar untuk menghindari kesalahan dalam tampilan dan perilaku halaman.</p>
+    </section>
+
+    <section>
+        <h2>3. Pertanyaan Seputar Anchor</h2>
+        <h3>a. Apa yang dimaksud dengan anchor?</h3>
+        <p>Anchor dalam HTML adalah elemen HTML yang berfungsi untuk membuat tautan ke URL target.</p>
+
+        <h3>b. Bagaimana caranya anchor dapat berfungsi, baik dari sisi pendefinisian ataupun pengaplikasiannya?</h3>
+        <p>Anchor didefinisikan menggunakan tag <code>&lt;a&gt;</code> dan dilengkapi dengan atribut <code>href</code>, yang merupakan atribut paling penting karena menentukan alamat atau target yang dapat diakses saat tautan diklik. Dalam hal ini, bisa menggunakan URL absolut untuk menautkan ke situs lain, atau URL relatif untuk navigasi internal dalam satu domain. 
+            Untuk membuat tautan ke elemen di halaman yang sama, gunakan atribut href dengan tanda pagar (#) diikuti oleh ID elemen yang dituju.</p>
+        
+        <p>Dalam penerapannya:
+            • Untuk tautan eksternal, cukup gunakan URL lengkap di atribut href. 
+            • Untuk tautan internal, gunakan URL relatif untuk merujuk ke halaman lain dalam situs tersebut.
+            • Untuk menghubungkan ke elemen di halaman yang sama (Anchor Internal), gunakan elemen dengan atribut ID dan buat tautan dengan atribut href yang merujuk ke ID tersebut. Tautan juga bisa digunakan untuk menautkan email, mengunduh file, dan lain-lain.
+            </p>
+    </section>
+
+    <section>
+        <h2>4. Pertanyaan Seputar Multimedia</h2>
+        <h3>A. Teks</h3>
+        <p>Sebutkan tag yang dapat digunakan untuk memanipulasi konten teks pada HTML, serta jelaskan fungsinya secara singkat!</p>
+        <ul>
+            <li><code>&lt;b&gt;</code>: Menampilkan teks tebal.</li>
+            <li><code>&lt;i&gt;</code>: Membuat teks miring.</li>
+            <li><code>&lt;u&gt;</code>: Memberikan efek garis bawah pada teks.</li>
+            <li><code>&lt;strong&gt;</code>: Menekankan teks, biasanya tebal.</li>
+            <li><code>&lt;del&gt;</code>: Menandai teks yang telah dihapus.</li>
+            <li><code>&lt;q&gt;</code>: Menunjukkan kutipan pendek.</li>
+            <li><code>&lt;ins&gt;</code>: Menandai teks yang telah ditambahkan.</li>
+        </ul>
+
+        <p>Sebutkan tag yang dapat digunakan untuk memanipulasi struktur konten teks pada HTML, serta jelaskan fungsinya secara singkat!</p>
+        <ul>
+            <li>&lt;head&gt;: Berisi informasi meta tentang dokumen, seperti judul dan tautan ke file CSS.</li>
+        <li>&lt;title&gt;: Digunakan di dalam elemen &lt;head&gt; untuk menetapkan judul halaman web yang ditampilkan pada tab browser. Hanya satu tag &lt;title&gt; yang diperbolehkan dalam satu dokumen HTML.</li>
+        <li>&lt;body&gt;: Bagian utama dari halaman web yang berisi semua konten yang ingin ditampilkan kepada pengunjung.</li>
+        <li>&lt;h1&gt; - &lt;h6&gt;: Digunakan untuk judul dan subjudul, dengan &lt;h1&gt; sebagai judul utama dan &lt;h6&gt; sebagai judul terkecil.</li>
+        <li>&lt;p&gt;: Digunakan untuk membuat paragraf teks.</li>
+        <li>&lt;a&gt;: Untuk membuat hyperlink ke halaman web lain.</li>
+        <li>&lt;br&gt;: Untuk membuat jeda baris dalam teks.</li>
+        <li>&lt;hr&gt;: Untuk membuat garis horizontal yang biasanya berfungsi sebagai pemisah konten.</li>
+        <li>&lt;div&gt;: Elemen blok yang akan memulai baris baru saat dipakai.</li>
+        <li>&lt;span&gt;: Digunakan untuk mengelompokkan elemen lain, tetapi merupakan elemen inline yang tidak memulai baris baru saat digunakan.</li>
+        </ul>
+
+        <h3>B. Gambar</h3>
+        <p>Apabila sebuah tag image tidak menampilkan gambar sebagaimana seharusnya, apa saja yang mungkin menyebabkan hal tersebut?</p>
+        <ul>
+            <li>URL atau Path Gambar Tidak Benar.</li>
+            <li>Nama File Gambar Salah.</li>
+            <li>Format File Gambar Tidak Didukung.</li>
+        </ul>
+
+        <p>Apabila ternyata ada teks yang menggantikan gambar tersebut, apa yang sebenarnya terjadi?</p>
+        <ul>
+            <li>Jika teks muncul menggantikan gambar di halaman web, ini menunjukkan bahwa browser menggunakan atribut alt (teks alternatif) pada tag <img>. Setiap tag <img> seharusnya memiliki atribut alt yang berisi teks alternatif yang ditampilkan jika gambar tidak dapat dimuat. Teks alt muncul ketika gambar gagal ditampilkan karena alasan seperti path yang salah, gambar rusak, atau masalah koneksi. Browser secara otomatis menampilkan teks alternatif untuk memberikan informasi kepada pengguna tentang apa yang seharusnya terlihat.</li>
+        </ul>
+
+
+        <h3>C. Audio</h3>
+        <p>Bagaimana caranya untuk kita dapat memasukkan audio source dari web (non-lokal)?</p>
+        <p>Untuk menambahkan audio dari sumber web non-lokal ke halaman web yang sedang dibuat, gunakan tag <code>&lt;audio&gt;</code> dengan atribut src yang mengarah ke URL file audio yang dihosting secara online.</p>
+
+        <h3>D. Video</h3>
+        <p>Apa yang biasanya terjadi apabila atribut autoplay pada tag video tidak berjalan? Apa yang anda harus lakukan sehingga atribut tersebut dapat berfungsi dengan semestinya?</p>
+        <p>Jika atribut autoplay tidak berfungsi, video tidak akan diputar otomatis saat halaman web dibuka. Beberapa langkah yang dapat dilakukan untuk memastikan video dapat autoplay adalah:
+            Menggunakan Atribut Muted : Untuk meningkatkan kemungkinan video diputar secara otomatis, tambahkan atribut muted pada tag <code>&lt;video&gt;</code>. Banyak browser mengizinkan video autoplay tanpa suara. 
+            Memastikan Tag Video Valid : Pastikan tag <code>&lt;video&gt;</code> disusun dengan benar dan file video berada di path yang tepat. Periksa semua elemen <source> untuk memastikan mereka berfungsi dan mendukung format yang diinginkan.
+            </p>
+    </section>
+
+</body>
+</html>
